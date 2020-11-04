@@ -1,11 +1,10 @@
 Installation
 
-npm install upmc-enterprises/atna2fhir#develop --save
+npm install upmc-enterprises/atna2fhir --save
 
 Usage
 ````javascript
-let atna2fhir = require('atna2fhir');
-let converter = new atna2fhir();
+let converter = require('atna2fhir');
 
 let xml = `<AuditMessage>
 <EventIdentification EventActionCode="E"
