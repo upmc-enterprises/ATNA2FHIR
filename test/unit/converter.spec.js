@@ -1,4 +1,4 @@
-let Converter = require('../../lib/converter');
+let atna2fhir = require('../../lib/converter');
 
 describe('Convert ATNA AuditMessage to FHIR AuditEvent', () => {
     let auditMessage = `<AuditMessage>
@@ -15,10 +15,13 @@ describe('Convert ATNA AuditMessage to FHIR AuditEvent', () => {
         <AuditSourceIdentification code="4" AuditSourceID="10.0.0.1@ACCT"/>
         </AuditMessage>`;
 
-    let expectedFhirAuditEvent = {"resourceType": "AuditEvent"};
+    let expectedFhirAuditEvent = {
+        "resourceType": "AuditEvent",
+        "type": "Activity"
+    };
 
     it('should return convert ATNA AuditMessage to FHIR AuditEvent', async () => {
-        let converter = new Converter();
+        let converter = new atna2fhir();
         let actualFhirAuditEvent = await converter.convert(auditMessage);
         expect(actualFhirAuditEvent).toEqual(expectedFhirAuditEvent);
     });
