@@ -7,7 +7,7 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest test"
   },
   "repository": {
     "type": "git",
@@ -30,5 +30,8 @@
   "homepage": "https://github.com/upmc-enterprises/ATNA2FHIR#readme",
   "dependencies": {
     "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "jest": "^26.6.3"
   }
 }
