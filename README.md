@@ -1,6 +1,6 @@
 Installation
 
-npm install upmc-enterprises/atna2fhir#develop --save
+npm install upmc-enterprises/atna2fhir --save
 
 Usage
 ````javascript
