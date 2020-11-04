@@ -7,9 +7,13 @@
     "lib": "lib"
   },
   "scripts": {
+<<<<<<< HEAD
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "npx eslint lib/**",
     "lint:fix": "npx eslint lib/** --fix"
+=======
+    "test": "echo \"Error: no test specified\" && exit 1"
+>>>>>>> main
   },
   "repository": {
     "type": "git",
@@ -32,6 +36,7 @@
   "homepage": "https://github.com/upmc-enterprises/ATNA2FHIR#readme",
   "dependencies": {
     "xml2js": "^0.4.23"
+<<<<<<< HEAD
   },
   "devDependencies": {
     "eslint": "^7.12.1",
@@ -39,5 +44,7 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1"
+=======
+>>>>>>> main
   }
 }
