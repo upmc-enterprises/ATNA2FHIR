@@ -1,3 +1,7 @@
+Installation
+
+npm install upmc-enterprises/atna2fhir#develop --save
+
 Usage
 ````javascript
 let converter = require('atna2fhir');
