@@ -1,8 +1,8 @@
-let atna2fhir = require('../../lib/converter');
+const xml2js = require('xml2js')
+const converter = require('../../lib');
 
 describe('Convert ATNA AuditMessage to FHIR AuditEvent', () => {
-    let auditMessage =
-        `<AuditMessage>
+    let rawAuditMessage = `<AuditMessage>
             <EventIdentification EventActionCode="E"
                 EventDateTime="2014-11-10T12:00:00.500-08:00" EventOutcomeIndicator="0">
                 <EventID csd-code="110100" codeSystemName="DCM" originalText="Application Activity"/>
@@ -19,8 +19,10 @@ describe('Convert ATNA AuditMessage to FHIR AuditEvent', () => {
     let expectedFhirAuditEvent = {"resourceType":"AuditEvent","type":{"system":"DCM","code":"110100"},"period":"2014-11-10T12:00:00.500-08:00","outcome":"0","agent":[{"who":{"identifier":{"value":"root"}},"requestor":false,"network":{"address":"10.145.240.60","type":"2"}}],"source":{"observer":{"identifier":{"value":"10.0.0.1@ACCT"}}}};
 
     it('should return convert ATNA AuditMessage to FHIR AuditEvent', async () => {
-        let converter = new atna2fhir();
-        let actualFhirAuditEvent = await converter.convert(auditMessage);
+        const parser = new xml2js.Parser(/* options */);
+        const parsed = await parser.parseStringPromise(rawAuditMessage);
+        const auditMessage = parsed.AuditMessage;
+        const actualFhirAuditEvent = await converter.convert(auditMessage);
         expect(actualFhirAuditEvent).toEqual(expectedFhirAuditEvent);
     });
 });
