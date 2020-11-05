@@ -8,8 +8,8 @@
   },
   "scripts": {
     "test": "jest test",
-    "lint": "npx eslint lib/**",
-    "lint:fix": "npx eslint lib/** --fix"
+    "lint": "npx eslint .",
+    "lint:fix": "npx eslint . --fix"
   },
   "repository": {
     "type": "git",
