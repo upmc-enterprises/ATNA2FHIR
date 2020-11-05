@@ -20,6 +20,8 @@ describe('Convert ATNA AuditMessage to FHIR AuditEvent', () => {
 
     it('should return convert ATNA AuditMessage to FHIR AuditEvent', async () => {
         const actualFhirAuditEvent = await converter.convert(rawAuditMessage);
+        // todo : verify recorded is +/- 10 seconds from the test run
+        // todo : delete recorded and compare the rest of the payload
         expect(actualFhirAuditEvent).toEqual(expectedFhirAuditEvent);
     });
 });
