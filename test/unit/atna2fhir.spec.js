@@ -33,7 +33,7 @@ describe('Convert ATNA AuditMessage to FHIR AuditEvent', () => {
         const actualFhirAuditEvent = await converter.convert(rawAuditMessage);
 
         // check to see if a recorded time exists
-        expect(actualFhirAuditEvent["recorded"]).toBeDefined()
+        expect(actualFhirAuditEvent["recorded"]).toBeDefined();
 
         // ignore the actual recorded time because it varies each run
         actualFhirAuditEvent["recorded"] = expectedFhirAuditEvent["recorded"];
