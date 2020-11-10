@@ -1,10 +1,14 @@
-Installation
+## Installing
 
-npm install upmc-enterprises/atna2fhir --save
+Using npm:
 
-Usage
+```bash
+$ npm install upmc-enterprises/atna2fhir
+```
+
+## Example
 ````javascript
-let converter = require('atna2fhir');
+let converter = require('atna2fhir')
 
 let xml = `<AuditMessage>
 <EventIdentification EventActionCode="E"
@@ -21,7 +25,9 @@ let xml = `<AuditMessage>
 </AuditMessage>`
 
 converter.convert(xml).then((response) => {
-	console.log(JSON.stringify(response));
-});
+  console.log(JSON.stringify(response))
+})
 
+// Want to use async/await?
+const result = await converter.convert(xml)
 ````
