@@ -3,7 +3,7 @@
 Using npm:
 
 ```bash
-$ npm install upmc-enterprises/atna2fhir
+$ npm install @upmc-enterprises/atna2fhir
 ```
 
 ## Example
