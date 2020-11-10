@@ -1,5 +1,5 @@
 {
-  "name": "atna2fhir",
+  "name": "@upmc-enterprises/atna2fhir",
   "version": "0.0.1",
   "description": "ATNA (DICOM) AuditMessage to FHIR AuditEvent converter",
   "main": "./lib/index.js",
@@ -24,8 +24,22 @@
     "AuditEvent",
     "HIPAA"
   ],
-  "author": "Veliyan Georgiev",
-  "license": "ISC",
+  "author": "UPMC Enterprises",
+  "contributors": [
+    {
+      "name": "Veliyan Georgiev",
+      "url": "https://github.com/villyg"
+    },
+    {
+      "name": "Jeffrey Taylor",
+      "url": "https://github.com/jeffreytaylor"
+    },
+    {
+      "name": "Brian Kolowitz",
+      "url": "https://github.com/BrianKolowitz"
+    }
+  ],  
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/upmc-enterprises/ATNA2FHIR/issues"
   },
