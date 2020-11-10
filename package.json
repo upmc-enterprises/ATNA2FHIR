@@ -1,6 +1,6 @@
 {
   "name": "@upmc-enterprises/atna2fhir",
-  "version": "0.0.1",
+  "version": "1.0.1",
   "description": "ATNA (DICOM) AuditMessage to FHIR AuditEvent converter",
   "main": "./lib/index.js",
   "directories": {
@@ -38,7 +38,7 @@
       "name": "Brian Kolowitz",
       "url": "https://github.com/BrianKolowitz"
     }
-  ],  
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/upmc-enterprises/ATNA2FHIR/issues"
