@@ -10,6 +10,9 @@
         NetworkAccessPointID="10.145.240.60"
         NetworkAccessPointTypeCode="2" UserID="root" UserIsRequestor="false">
         <RoleIDCode csd-code="110150" codeSystemName="DCM" originalText="Application"/>
+        <MediaIdentifier>
+            <MediaType csd-code="110030" codeSystemName="DCM" originalText="USB Disk Emulation"/>
+        </MediaIdentifier>
     </ActiveParticipant>
     <AuditSourceIdentification code="4" AuditSourceID="10.0.0.1@ACCT"/>
 </AuditMessage>

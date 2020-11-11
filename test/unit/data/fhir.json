@@ -24,6 +24,7 @@
       "requestor": false,
       "role": {"coding": [{"code": "110150", "display": "Application", "system": "DCM"}]},
       "type": {"coding": [{"code": "110150", "display": "Application", "system": "DCM"}]},
+      "media": {"code": "110030", "display": "USB Disk Emulation", "system": "http://dicom.nema.org/resources/ontology/DCM"},
       "network": {
         "address": "10.145.240.60",
         "type": "2"
