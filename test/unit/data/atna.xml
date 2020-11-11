@@ -14,5 +14,7 @@
             <MediaType csd-code="110030" codeSystemName="DCM" originalText="USB Disk Emulation"/>
         </MediaIdentifier>
     </ActiveParticipant>
-    <AuditSourceIdentification code="4" AuditSourceID="10.0.0.1@ACCT"/>
+    <AuditSourceIdentification code="4" AuditSourceID="10.0.0.1@ACCT">
+        <AuditSourceTypeCode csd-code="9" codeSystemName="DCM" originalText="Other" />
+    </AuditSourceIdentification>
 </AuditMessage>
