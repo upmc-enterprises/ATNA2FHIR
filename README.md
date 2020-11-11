@@ -23,14 +23,29 @@ let xml = `<AuditMessage>
         EventDateTime="2014-11-10T12:00:00.500-08:00" EventOutcomeIndicator="0">
         <EventID csd-code="110100" codeSystemName="DCM" originalText="Application Activity"/>
         <EventTypeCode csd-code="110120" codeSystemName="DCM" originalText="Application Start"/>
-		<EventOutcomeDescription>description</EventOutcomeDescription>        
+		<EventOutcomeDescription>description</EventOutcomeDescription>
+        <EventPurposeOfUse csd-code="HMARKT" codeSystemName="http://terminology.hl7.org/CodeSystem/v3-ActReason" originalText="healthcare marketing"/>
     </EventIdentification>
     <ActiveParticipant AlternativeUserID="alt@user"
         NetworkAccessPointID="10.145.240.60"
         NetworkAccessPointTypeCode="2" UserID="root" UserIsRequestor="false">
         <RoleIDCode csd-code="110150" codeSystemName="DCM" originalText="Application"/>
+        <MediaIdentifier>
+            <MediaType csd-code="110030" codeSystemName="DCM" originalText="USB Disk Emulation"/>
+        </MediaIdentifier>
     </ActiveParticipant>
-    <AuditSourceIdentification code="4" AuditSourceID="10.0.0.1@ACCT"/>
+    <AuditSourceIdentification code="4" AuditSourceID="10.0.0.1@ACCT">
+        <AuditSourceTypeCode csd-code="9" codeSystemName="DCM" originalText="Other" />
+    </AuditSourceIdentification>
+	<ParticipantObjectIdentification ParticipantObjectID="1.2.840.10008.2.3.4.5.6.7.78.8" ParticipantObjectTypeCode="2" ParticipantObjectTypeCodeRole="3" ParticipantObjectDataLifeCycle="1">
+		<ParticipantObjectIDTypeCode code="110180" codeSystemName="DCM" displayName="Study Instance UID"/>
+		<ParticipantObjectDescription>
+			<MPPS UID="1.2.840.10008.1.2.3.4.5"/>
+			<Accession Number="12341234" />
+			<SOPClass UID="1.2.840.10008.5.1.4.1.1.2" NumberOfInstances="1500"/>
+			<SOPClass UID="1.2.840.10008.5.1.4.1.1.11.1" NumberOfInstances="3"/>
+		</ParticipantObjectDescription>
+	</ParticipantObjectIdentification>    
 </AuditMessage>`
 
 let result
