@@ -25,17 +25,22 @@ let xml = `<AuditMessage>
     <EventTypeCode csd-code="110120" codeSystemName="DCM" originalText="Application Start"/>
 </EventIdentification>
 <ActiveParticipant AlternativeUserID="alt@user"
-    NetworkAccessPointID="10.145.240.60"
+    NetworkAccessPointID="10.0.0.1"
     NetworkAccessPointTypeCode="2" UserID="root" UserIsRequestor="false">
     <RoleIDCode csd-code="110150" codeSystemName="DCM" originalText="Application"/>
 </ActiveParticipant>
 <AuditSourceIdentification code="4" AuditSourceID="10.0.0.1@ACCT"/>
 </AuditMessage>`
 
+let result
+
+// With promises
 converter.convert(xml).then((response) => {
-  console.log(JSON.stringify(response))
+  result = response
+  console.log(JSON.stringify(result))
 })
 
-// Want to use async/await?
-const result = await converter.convert(xml)
+// With async/await
+result = await converter.convert(xml)
+console.log(JSON.stringify(result))
 ````
