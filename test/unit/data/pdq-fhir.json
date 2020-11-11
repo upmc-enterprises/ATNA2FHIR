@@ -1,0 +1,120 @@
+{
+  "resourceType": "AuditEvent",
+  "text": {
+    "status": "generated",
+    "div": "<div></div>"
+  },
+  "type": {
+    "system": "DCM",
+    "code": "110112"
+  },
+  "period": "2020-03-19T12:16:37.320Z",
+  "recorded": "2020-11-11T21:47:55.177Z",
+  "outcome": "0",
+  "agent": [
+    {
+      "who": {
+        "identifier": {
+          "value": "TEST_DEPARTMENT|TEST_PD_CONSUMER"
+        }
+      },
+      "requestor": true,
+      "network": {
+        "address": "127.0.0.1",
+        "type": "2"
+      }
+    },
+    {
+      "who": {
+        "identifier": {
+          "value": "PIM|TEST_PD_SUPPLIER"
+        }
+      },
+      "requestor": false,
+      "network": {
+        "address": "127.0.0.1",
+        "type": "2"
+      }
+    }
+  ],
+  "source": {
+    "site": "MPI",
+    "observer": {
+      "identifier": {
+        "value": "MPI"
+      }
+    }
+  },
+  "entity": [
+    {
+      "what": {
+        "identifier": {
+          "value": "123456789"
+        }
+      },
+      "type": {
+        "code": "2"
+      },
+      "role": {
+        "code": "24"
+      },
+      "query": "TVNIfF5+XCZ8VEVTVF9QRF9DT05TVU1FUnxURVNUX0RFUEFSVE1FTlR8VEVTVF9QRF9TVVBQTElFUnxQSU18MjAwODEwMzExMTI3MDR8fFFCUF5RMjJeUUJQX1EyMXwxMjM0NTY3ODl8UHwyLjV8fHxFUgpRUER8SUhFIFBEUSBRdWVyeXw0NzEzfEBQSUQuNS4xXnRlc3QKUkNQfEl8MTBeUkQ=",
+      "detail": {
+        "type": "MSH-10",
+        "value": "MzI0NDA2NjA5"
+      }
+    },
+    {
+      "what": {
+        "identifier": {
+          "value": "18^^^MPI&2.16.840.1.113883.3.37.4.1.1.2.1.1&ISO^PI"
+        }
+      },
+      "type": {
+        "code": "1"
+      },
+      "role": {
+        "code": "1"
+      }
+    },
+    {
+      "what": {
+        "identifier": {
+          "value": "12345^^^REG1&2.16.840.1.113883.3.37.4.1.1.2.511.1&ISO^PI"
+        }
+      },
+      "type": {
+        "code": "1"
+      },
+      "role": {
+        "code": "1"
+      }
+    },
+    {
+      "what": {
+        "identifier": {
+          "value": "23^^^MPI&2.16.840.1.113883.3.37.4.1.1.2.1.1&ISO^PI"
+        }
+      },
+      "type": {
+        "code": "1"
+      },
+      "role": {
+        "code": "1"
+      }
+    },
+    {
+      "what": {
+        "identifier": {
+          "value": "54321^^^REG2&2.16.840.1.113883.3.37.4.1.1.2.511.1&ISO^PI"
+        }
+      },
+      "type": {
+        "code": "1"
+      },
+      "role": {
+        "code": "1"
+      }
+    }
+  ]
+}
