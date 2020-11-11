@@ -22,6 +22,8 @@
         }
       },
       "requestor": false,
+      "role": {"coding": [{"code": "110150", "display": "Application", "system": "DCM"}]},
+      "type": {"coding": [{"code": "110150", "display": "Application", "system": "DCM"}]},
       "network": {
         "address": "10.145.240.60",
         "type": "2"
