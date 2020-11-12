@@ -1,0 +1,85 @@
+{
+	"resourceType": "AuditEvent",
+	"text": {
+		"status": "generated",
+		"div": "<div xmlns='http://www.w3.org/1999/xhtml'>Audit Event</div>"
+	},
+	"type": {
+		"system": "http://dicom.nema.org/resources/ontology/DCM",
+		"code": "110100"
+	},
+	"action": "E",
+	"period": "2014-11-10T12:00:00.500-08:00",
+	"recorded": "2020-11-12T18:11:09.108Z",
+	"outcome": "0",
+	"outcomeDesc": "description",
+	"purposeOfEvent": {
+		"coding": [
+			{
+				"code": "HMARKT",
+				"system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
+				"display": "healthcare marketing"
+			}
+		]
+	},
+	"agent": [
+		{
+			"type": {
+				"code": "110150",
+				"system": "http://dicom.nema.org/resources/ontology/DCM",
+				"display": "Application"
+			},
+			"role": {
+				"code": "110150",
+				"system": "http://dicom.nema.org/resources/ontology/DCM",
+				"display": "Application"
+			},
+			"who": {
+				"identifier": {
+					"value": "root"
+				}
+			},
+			"requestor": false,
+			"altId": "alt@user",
+			"media": {
+				"system": "http://dicom.nema.org/resources/ontology/DCM",
+				"code": "110030",
+				"display": "USB Disk Emulation"
+			},
+			"network": {
+				"address": "10.145.240.60",
+				"type": "2"
+			}
+		}
+	],
+	"source": {
+		"observer": {
+			"identifier": {
+				"value": "10.0.0.1@ACCT"
+			}
+		},
+		"type": {
+			"code": "9",
+			"system": "http://terminology.hl7.org/CodeSystem/security-source-type",
+			"display": "Other"
+		}
+	},
+	"entity": [
+		{
+			"what": {
+				"identifier": {
+					"value": "1.2.840.10008.2.3.4.5.6.7.78.8"
+				}
+			},
+			"type": {
+				"code": "2"
+			},
+			"role": {
+				"code": "3"
+			},
+			"lifecycle": {
+				"code": "1"
+			}
+		}
+	]
+}
