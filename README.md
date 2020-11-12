@@ -48,15 +48,15 @@ let xml = `<AuditMessage>
 	</ParticipantObjectIdentification>    
 </AuditMessage>`
 
-let result
 
-// With promises
-converter.convert(xml).then((response) => {
-  result = response
-  console.log(JSON.stringify(result))
+
+// Usage with async/await
+const result = await converter.convert(xml)
+console.log(JSON.stringify(result))
+
+// Usage with callbacks
+converter.convert(xml).then((response) => {  
+  console.log(JSON.stringify(response))
 })
 
-// With async/await
-result = await converter.convert(xml)
-console.log(JSON.stringify(result))
 ````
