@@ -8,9 +8,16 @@
     "system": "http://dicom.nema.org/resources/ontology/DCM",
     "code": "110112"
   },
+  "subtype": [
+    {
+      "code": "ITI-21",
+      "system": "IHE Transactions",
+      "display": "Patient Demographics Query"
+    }
+  ],
   "action": "E",
   "period": "2020-03-19T12:16:37.320Z",
-  "recorded": "2020-11-12T18:12:03.363Z",
+  "recorded": "2020-11-12T20:17:28.861Z",
   "outcome": "0",
   "agent": [
     {

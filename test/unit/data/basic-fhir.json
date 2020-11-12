@@ -8,9 +8,16 @@
 		"system": "http://dicom.nema.org/resources/ontology/DCM",
 		"code": "110100"
 	},
+	"subtype": [
+		{
+			"code": "110120",
+			"system": "DCM",
+			"display": "Application Start"
+		}
+	],
 	"action": "E",
 	"period": "2014-11-10T12:00:00.500-08:00",
-	"recorded": "2020-11-12T18:11:09.108Z",
+	"recorded": "2020-11-12T20:17:06.957Z",
 	"outcome": "0",
 	"outcomeDesc": "description",
 	"purposeOfEvent": {
@@ -39,8 +46,8 @@
 					"value": "root"
 				}
 			},
-			"requestor": false,
 			"altId": "alt@user",
+			"requestor": false,
 			"media": {
 				"system": "http://dicom.nema.org/resources/ontology/DCM",
 				"code": "110030",
