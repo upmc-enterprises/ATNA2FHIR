@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuditMessage>
+    <EventIdentification EventActionCode="R" EventDateTime="2020-03-19T12:16:37.320Z" EventOutcomeIndicator="0">
+        <EventID csd-code="rest" codeSystemName="http://terminology.hl7.org/CodeSystem/audit-event-type" originalText="Restful Operation"/>
+        <EventTypeCode csd-code="search-type" codeSystemName="http://hl7.org/fhir/restful-interaction" originalText="search-type"/>
+    </EventIdentification>
+    <ActiveParticipant UserID="username1" AlternativeUserID="Last, First M" UserIsRequestor="true" NetworkAccessPointID="127.0.0.1" NetworkAccessPointTypeCode="2">
+        <RoleIDCode csd-code="humanuser" codeSystemName="http://terminology.hl7.org/CodeSystem/extra-security-role-type" originalText="human user"/>
+    </ActiveParticipant>
+    <ActiveParticipant UserID="serviceaccount1" UserIsRequestor="false" NetworkAccessPointID="express-logging-example.webapp" NetworkAccessPointTypeCode="1">
+        <RoleIDCode csd-code="110150" codeSystemName="http://dicom.nema.org/resources/ontology/DCM" originalText="Application"/>
+    </ActiveParticipant>
+    <AuditSourceIdentification AuditEnterpriseSiteID="Cloud" AuditSourceID="exampleapp.com">
+        <AuditSourceTypeCode csd-code="3" codeSystemName="http://terminology.hl7.org/CodeSystem/security-source-type" originalText="Web Server"/>
+    </AuditSourceIdentification>
+    <ParticipantObjectIdentification ParticipantObjectID="v1/Patient" ParticipantObjectTypeCode="2" ParticipantObjectTypeCodeRole="24" ParticipantObjectDataLifeCycle="6">
+        <ParticipantObjectQuery>P2xhc3RfbmFtZT1kb2U=</ParticipantObjectQuery>
+        <ParticipantObjectDetail type="last_name" value="doe"/>
+    </ParticipantObjectIdentification>
+</AuditMessage>

@@ -31,12 +31,12 @@ describe('Converts ATNA AuditMessages to FHIR AuditEvents', () => {
     })
   })
 
-  describe('IHE - ITI-47 Patient Demographics Source audit message [DICOM extension compatible] ', () => {
-    // source: https://ehealthsuisse.ihe-europe.net/EVSClient//detailedResult.seam?type=ATNA&oid=1.3.6.1.4.1.12559.11.25.1.13.43567
-    const fhir = JSON.parse(fs.readFileSync('test/unit/data/ITI-47-fhir.json'))
-    const atna = fs.readFileSync('test/unit/data/ITI-47-atna.xml')
+  describe('An ATNA representation of a FHIR example-search', () => {
+    // source: https://www.hl7.org/fhir/audit-event-example-search.json.html
+    const fhir = JSON.parse(fs.readFileSync('test/unit/data/example-search-fhir.json'))
+    const atna = fs.readFileSync('test/unit/data/example-search-atna.xml')
 
-    it('maps the IHE - ITI-47 Patient Demographics Source audit message [DICOM extension compatible] to a FHIR AuditEvent', async () => {
+    it('maps an ATNA representation of a FHIR example-search to a FHIR AuditEvent', async () => {
       const auditEvent = await converter.convert(atna)
       // set the expected recordedDate time here, as it varies each run
       fhir.recorded = dateRightNowIsoString
