@@ -16,9 +16,9 @@ ATNA2FHIR Version |     FHIR Version      |
 
 ## Usage
 ````javascript
-let converter = require('atna2fhir')
+const converter = require('@upmc-enterprises/atna2fhir')
 
-let xml = `<AuditMessage>
+const xml = `<AuditMessage>
     <EventIdentification EventActionCode="E"
         EventDateTime="2014-11-10T12:00:00.500-08:00" EventOutcomeIndicator="0">
         <EventID csd-code="110100" codeSystemName="DCM" originalText="Application Activity"/>
