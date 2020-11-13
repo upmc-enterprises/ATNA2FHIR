@@ -11,13 +11,13 @@
 	"subtype": [
 		{
 			"code": "110120",
-			"system": "DCM",
+			"system": "http://dicom.nema.org/resources/ontology/DCM",
 			"display": "Application Start"
 		}
 	],
 	"action": "E",
 	"period": "2014-11-10T12:00:00.500-08:00",
-	"recorded": "2020-11-13T15:48:07.225Z",
+	"recorded": "2020-11-13T18:35:11.372Z",
 	"outcome": "0",
 	"outcomeDesc": "description",
 	"purposeOfEvent": {
