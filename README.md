@@ -24,7 +24,6 @@ const xml = `<AuditMessage>
         <EventID csd-code="110100" codeSystemName="DCM" originalText="Application Activity"/>
         <EventTypeCode csd-code="110120" codeSystemName="DCM" originalText="Application Start"/>
 		<EventOutcomeDescription>description</EventOutcomeDescription>
-        <EventPurposeOfUse csd-code="HMARKT" codeSystemName="http://terminology.hl7.org/CodeSystem/v3-ActReason" originalText="healthcare marketing"/>
     </EventIdentification>
     <ActiveParticipant AlternativeUserID="alt@user"
         NetworkAccessPointID="10.145.240.60"
