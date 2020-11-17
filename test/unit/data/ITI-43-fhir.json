@@ -1,0 +1,128 @@
+{
+    "resourceType": "AuditEvent",
+    "text": {
+        "status": "generated",
+        "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Audit Event</div>"
+    },
+    "type": {
+        "system": "http://dicom.nema.org/resources/ontology/DCM",
+        "code": "110107"
+    },
+    "subtype": [
+        {
+            "code": "ITI-43",
+            "system": "IHE Transactions",
+            "display": "Retrieve Document Set"
+        }
+    ],
+    "action": "C",
+    "period": "2018-09-06T12:19:38.441+02:00",
+    "recorded": "2020-11-13T18:37:44.462Z",
+    "outcome": "4",
+    "agent": [
+        {
+            "type": {
+                "code": "110153",
+                "system": "http://dicom.nema.org/resources/ontology/DCM",
+                "display": "Source"
+            },
+            "role": {
+                "code": "110153",
+                "system": "http://dicom.nema.org/resources/ontology/DCM",
+                "display": "Source"
+            },
+            "who": {
+                "identifier": {
+                    "value": "http://localhost:8083/XdsRepo"
+                }
+            },
+            "altId": "610",
+            "name": "(null)",
+            "requestor": false,
+            "network": {
+                "address": "localhost",
+                "type": "1"
+            }
+        },
+        {
+            "type": {
+                "code": "everyone",
+                "system": "http://dicom.nema.org/resources/ontology/DCM",
+                "display": "everyone"
+            },
+            "role": {
+                "code": "everyone",
+                "system": "http://dicom.nema.org/resources/ontology/DCM",
+                "display": "everyone"
+            },
+            "who": {
+                "identifier": {
+                    "value": "system@localhost"
+                }
+            },
+            "requestor": true,
+            "network": {
+                "type": "1"
+            }
+        },
+        {
+            "type": {
+                "code": "110152",
+                "system": "http://dicom.nema.org/resources/ontology/DCM",
+                "display": "Destination"
+            },
+            "role": {
+                "code": "110152",
+                "system": "http://dicom.nema.org/resources/ontology/DCM",
+                "display": "Destination"
+            },
+            "who": {
+                "identifier": {
+                    "value": "system@localhost"
+                }
+            },
+            "altId": "610",
+            "name": "(null)",
+            "requestor": false,
+            "network": {
+                "address": "mac-mba.local",
+                "type": "1"
+            }
+        }
+    ],
+    "source": {
+        "site": "MBA_Pat18",
+        "observer": {
+            "identifier": {
+                "value": "ARTS4_1_6_A_1_49088"
+            }
+        },
+        "type": {
+            "code": "4"
+        }
+    },
+    "entity": [
+        {
+            "what": {
+                "identifier": {
+                    "value": "1.2.42.20180827145016.86"
+                }
+            },
+            "type": {
+                "code": "2"
+            },
+            "role": {
+                "code": "3"
+            },
+            "securityLabel": [
+                {
+                    "code": "Sensitivity"
+                }
+            ],
+            "detail": {
+                "type": "Repository Unique Id",
+                "valueString": "MS4zLjYuMS40LjEuMjEzNjcuMjAxNy4yLjMuMjI="
+            }
+        }
+    ]
+}

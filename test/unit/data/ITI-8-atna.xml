@@ -1,0 +1,19 @@
+<AuditMessage>
+    <EventIdentification EventActionCode="U" EventDateTime="2020-08-24T20:00:32.654Z" EventOutcomeIndicator="0">
+        <EventID csd-code="110110" codeSystemName="DCM" originalText="Patient Record" />
+        <EventTypeCode csd-code="ITI-8" codeSystemName="IHE Transactions" originalText="Patient Identity Feed" />
+    </EventIdentification>
+    <ActiveParticipant UserID="root|MPI-HC" UserName="icwmpi01.hc-demo.svc.swisscom-health.it" UserIsRequestor="true" NetworkAccessPointID="10.1.172.2" NetworkAccessPointTypeCode="2">
+        <RoleIDCode csd-code="110153" codeSystemName="DCM" originalText="Source Role ID" />
+    </ActiveParticipant>
+    <ActiveParticipant UserID="null|PXS-HC" AlternativeUserID="14112" UserIsRequestor="false" NetworkAccessPointID="10.1.171.2" NetworkAccessPointTypeCode="2">
+        <RoleIDCode csd-code="110152" codeSystemName="DCM" originalText="Destination Role ID" />
+    </ActiveParticipant>
+    <AuditSourceIdentification AuditEnterpriseSiteID="2.16.756.5.30.1.194" AuditSourceID="hcohcdemo01-app06-icwpxs01">
+        <AuditSourceTypeCode csd-code="9" codeSystemName="DCM" originalText="Other" />
+    </AuditSourceIdentification>
+    <ParticipantObjectIdentification ParticipantObjectID="305166^^^MPI-HC&amp;2.16.756.5.30.1.194.3.1.1&amp;ISO^PI~ed91d9a9-48c4-400a-a830-e81ac0b3a57e^^^PatientPortal&amp;2.16.756.5.30.1.109.4.2.2&amp;ISO^PI~761337617012205449^^^UPI&amp;2.16.756.5.30.1.127.3.10.3&amp;ISO^PI" ParticipantObjectTypeCode="1" ParticipantObjectTypeCodeRole="1">
+        <ParticipantObjectIDTypeCode csd-code="2" codeSystemName="RFC-3881" originalText="Patient Number" />
+        <ParticipantObjectDetail type="MSH-10" value="Y2RjMGQzZmEtNDQ2Ny0xMWRjLWE2YmUtMzYwM2Q2ODY2ODA3" />
+    </ParticipantObjectIdentification>
+</AuditMessage>

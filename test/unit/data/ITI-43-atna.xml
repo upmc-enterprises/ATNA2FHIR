@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<AuditMessage>
+    <EventIdentification EventDateTime="2018-09-06T12:19:38.441+02:00" EventOutcomeIndicator="4" EventActionCode="C">
+        <EventID codeSystemName="DCM" originalText="Import" csd-code="110107"/>
+        <EventTypeCode codeSystemName="IHE Transactions" originalText="Retrieve Document Set" csd-code="ITI-43"/>
+    </EventIdentification>
+    <ActiveParticipant UserIsRequestor="false" NetworkAccessPointTypeCode="1" NetworkAccessPointID="localhost" UserName="(null)" UserID="http://localhost:8083/XdsRepo" AlternativeUserID="610">
+        <RoleIDCode codeSystemName="DCM" originalText="Source" csd-code="110153"/>
+    </ActiveParticipant>
+    <ActiveParticipant UserIsRequestor="true" NetworkAccessPointTypeCode="1" UserID="system@localhost">
+        <RoleIDCode codeSystemName="DCM" originalText="everyone" csd-code="everyone"/>
+    </ActiveParticipant>
+    <ActiveParticipant UserIsRequestor="false" NetworkAccessPointTypeCode="1" NetworkAccessPointID="mac-mba.local" UserName="(null)" UserID="system@localhost" AlternativeUserID="610">
+        <RoleIDCode codeSystemName="DCM" originalText="Destination" csd-code="110152"/>
+    </ActiveParticipant>
+    <AuditSourceIdentification AuditSourceID="ARTS4_1_6_A_1_49088" AuditEnterpriseSiteID="MBA_Pat18">
+        <AuditSourceTypeCode csd-code="4"/>
+    </AuditSourceIdentification>
+    <ParticipantObjectIdentification ParticipantObjectSensitivity="Sensitivity" ParticipantObjectTypeCode="2" ParticipantObjectTypeCodeRole="3" ParticipantObjectID="1.2.42.20180827145016.86">
+        <ParticipantObjectIDTypeCode codeSystemName="DCM" originalText="Report Number" csd-code="9"/>
+        <ParticipantObjectDetail type="Repository Unique Id" value="MS4zLjYuMS40LjEuMjEzNjcuMjAxNy4yLjMuMjI="/>
+    </ParticipantObjectIdentification>
+</AuditMessage>
+
