@@ -5,8 +5,10 @@
         "node": true,
         "jest": true
     },
+    "plugins": ["security"],
     "extends": [
-        "standard"
+        "standard",
+        "plugin:security/recommended"
     ],
     "parserOptions": {
         "ecmaVersion": 12
