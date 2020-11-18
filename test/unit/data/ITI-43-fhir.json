@@ -85,16 +85,16 @@
             "name": "(null)",
             "requestor": false,
             "network": {
-                "address": "mac-mba.local",
+                "address": "example.local",
                 "type": "1"
             }
         }
     ],
     "source": {
-        "site": "MBA_Pat18",
+        "site": "123@example.com",
         "observer": {
             "identifier": {
-                "value": "ARTS4_1_6_A_1_49088"
+                "value": "1.2.3"
             }
         },
         "type": {
@@ -105,7 +105,7 @@
         {
             "what": {
                 "identifier": {
-                    "value": "1.2.42.20180827145016.86"
+                    "value": "1.2.3"
                 }
             },
             "type": {
@@ -121,7 +121,7 @@
             ],
             "detail": {
                 "type": "Repository Unique Id",
-                "valueString": "MS4zLjYuMS40LjEuMjEzNjcuMjAxNy4yLjMuMjI="
+                "valueString": "P2xhc3RfbmFtZT1kb2U="
             }
         }
     ]

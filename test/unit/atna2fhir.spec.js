@@ -44,7 +44,7 @@ describe('Converts ATNA AuditMessages to FHIR AuditEvents', () => {
     })
   })
 
-  describe('A IHE - ITI-48 Retrieve Value Set Consumer ATNA AuditMessage', () => {
+  describe('An IHE - ITI-48 Retrieve Value Set Consumer ATNA AuditMessage', () => {
     // source: https://ehealthsuisse.ihe-europe.net/EVSClient//detailedResult.seam?type=ATNA&oid=1.3.6.1.4.1.12559.11.25.1.13.46476
     const fhir = JSON.parse(fs.readFileSync('test/unit/data/ITI-48-fhir.json'))
     const atna = fs.readFileSync('test/unit/data/ITI-48-atna.xml')
@@ -57,7 +57,7 @@ describe('Converts ATNA AuditMessages to FHIR AuditEvents', () => {
     })
   })
 
-  describe('IHE - ITI-8 Patient Identifier Cross-reference Manager or Document Registry Actor audit message (Create or Update)', () => {
+  describe('An IHE - ITI-8 Patient Identifier Cross-reference Manager or Document Registry Actor audit message (Create or Update)', () => {
     // source: https://ehealthsuisse.ihe-europe.net/EVSClient//detailedResult.seam?type=ATNA&oid=1.3.6.1.4.1.12559.11.25.1.13.43704
     const fhir = JSON.parse(fs.readFileSync('test/unit/data/ITI-8-fhir.json'))
     const atna = fs.readFileSync('test/unit/data/ITI-8-atna.xml')
@@ -70,7 +70,7 @@ describe('Converts ATNA AuditMessages to FHIR AuditEvents', () => {
     })
   })
 
-  describe('IHE - ITI-43 Document Consumer audit message [DICOM extension compatible]', () => {
+  describe('An IHE - ITI-43 Document Consumer audit message [DICOM extension compatible]', () => {
     // source: https://ehealthsuisse.ihe-europe.net/EVSClient//detailedResult.seam?type=ATNA&oid=1.3.6.1.4.1.12559.11.25.1.13.18994
     const fhir = JSON.parse(fs.readFileSync('test/unit/data/ITI-43-fhir.json'))
     const atna = fs.readFileSync('test/unit/data/ITI-43-atna.xml')
