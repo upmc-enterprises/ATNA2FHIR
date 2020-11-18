@@ -20,15 +20,6 @@
 	"recorded": "2020-11-13T18:35:11.372Z",
 	"outcome": "0",
 	"outcomeDesc": "description",
-	"purposeOfEvent": {
-		"coding": [
-			{
-				"code": "HMARKT",
-				"system": "http://terminology.hl7.org/CodeSystem/v3-ActReason",
-				"display": "healthcare marketing"
-			}
-		]
-	},
 	"agent": [
 		{
 			"type": {
@@ -54,7 +45,7 @@
 				"display": "USB Disk Emulation"
 			},
 			"network": {
-				"address": "10.145.240.60",
+				"address": "127.0.0.1",
 				"type": "2"
 			}
 		}
@@ -62,7 +53,7 @@
 	"source": {
 		"observer": {
 			"identifier": {
-				"value": "10.0.0.1@ACCT"
+				"value": "127.0.0.1@ACCT"
 			}
 		},
 		"type": {
@@ -75,7 +66,7 @@
 		{
 			"what": {
 				"identifier": {
-					"value": "1.2.840.10008.2.3.4.5.6.7.78.8"
+					"value": "1.2.3"
 				}
 			},
 			"type": {
