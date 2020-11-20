@@ -119,10 +119,10 @@
                     "code": "Sensitivity"
                 }
             ],
-            "detail": {
+            "detail": [{
                 "type": "Repository Unique Id",
                 "valueString": "P2xhc3RfbmFtZT1kb2U="
-            }
+            }]
         }
     ]
 }
