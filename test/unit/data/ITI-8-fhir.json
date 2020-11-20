@@ -93,10 +93,12 @@
       "role": {
         "code": "1"
       },
-      "detail": {
-        "type": "MSH-10",
-        "valueString": "123"
-      }
+      "detail": [
+        {
+          "type": "MSH-10",
+          "valueString": "123"
+        }
+      ]
     }
   ]
 }

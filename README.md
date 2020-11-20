@@ -19,15 +19,12 @@ ATNA2FHIR Version |     FHIR Version      |
 const converter = require('@upmc-enterprises/atna2fhir')
 
 const xml = `<AuditMessage>
-    <EventIdentification EventActionCode="E"
-        EventDateTime="2014-11-10T12:00:00.500-08:00" EventOutcomeIndicator="0">
+    <EventIdentification EventActionCode="E" EventDateTime="2014-11-10T12:00:00.500-08:00" EventOutcomeIndicator="0">
         <EventID csd-code="110100" codeSystemName="DCM" originalText="Application Activity"/>
         <EventTypeCode csd-code="110120" codeSystemName="DCM" originalText="Application Start"/>
-		<EventOutcomeDescription>description</EventOutcomeDescription>
+        <EventOutcomeDescription>Example Description</EventOutcomeDescription>
     </EventIdentification>
-    <ActiveParticipant AlternativeUserID="alt@user"
-        NetworkAccessPointID="127.0.0.1"
-        NetworkAccessPointTypeCode="2" UserID="root" UserIsRequestor="true">
+    <ActiveParticipant AlternativeUserID="alt@user" NetworkAccessPointID="127.0.0.1" NetworkAccessPointTypeCode="2" UserID="root" UserIsRequestor="true">
         <RoleIDCode csd-code="110150" codeSystemName="DCM" originalText="Application"/>
         <MediaIdentifier>
             <MediaType csd-code="110030" codeSystemName="DCM" originalText="USB Disk Emulation"/>
@@ -36,9 +33,9 @@ const xml = `<AuditMessage>
     <AuditSourceIdentification code="4" AuditSourceID="127.0.0.1@ACCT">
         <AuditSourceTypeCode csd-code="9" codeSystemName="DCM" originalText="Other" />
     </AuditSourceIdentification>
-	<ParticipantObjectIdentification ParticipantObjectID="1.2.3" ParticipantObjectTypeCode="2" ParticipantObjectTypeCodeRole="3" ParticipantObjectDataLifeCycle="1">
-		<ParticipantObjectIDTypeCode code="110180" codeSystemName="DCM" displayName="Study Instance UID"/>
-	</ParticipantObjectIdentification>    
+    <ParticipantObjectIdentification ParticipantObjectID="1.2.3" ParticipantObjectTypeCode="2" ParticipantObjectTypeCodeRole="3" ParticipantObjectDataLifeCycle="1">
+        <ParticipantObjectIDTypeCode code="110180" codeSystemName="DCM" displayName="Study Instance UID"/>
+    </ParticipantObjectIdentification>    
 </AuditMessage>`
 
 // Usage with async/await
