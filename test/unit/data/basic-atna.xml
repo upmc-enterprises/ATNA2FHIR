@@ -17,7 +17,7 @@
         <AuditSourceTypeCode csd-code="9" codeSystemName="DCM" originalText="Other" />
     </AuditSourceIdentification>
     <ParticipantObjectIdentification ParticipantObjectID="1.2.3" ParticipantObjectTypeCode="2" ParticipantObjectTypeCodeRole="3" ParticipantObjectDataLifeCycle="1">
-        <ParticipantObjectIDTypeCode code="110180" codeSystemName="DCM" displayName="Study Instance UID"/>
+        <ParticipantObjectIDTypeCode csd-code="110180" codeSystemName="DCM" originalText="Study Instance UID"/>
         <ParticipantObjectDescription>
             <MPPS UID="1.2.3"/>
             <Accession Number="1234n" />

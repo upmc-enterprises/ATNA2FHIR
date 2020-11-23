@@ -1,5 +1,5 @@
 # ATNA2FHIR
-ATNA2FHIR converts audit logs that adhere to the [ATNA](https://wiki.ihe.net/index.php/Audit_Trail_and_Node_Authentication) [Audit Trail Message Format](http://dicom.nema.org/medical/dicom/current/output/html/part15.html#sect_A.5) into [HL7 FHIR](https://hl7.org/FHIR/) [AuditEvent](https://hl7.org/FHIR/auditevent.html) resources.
+ATNA2FHIR converts audit logs that adhere to the ([ATNA](https://wiki.ihe.net/index.php/Audit_Trail_and_Node_Authentication)) [Audit Trail Message Format](http://dicom.nema.org/medical/dicom/current/output/html/part15.html#sect_A.5) into ([HL7 FHIR](https://hl7.org/FHIR/)) [AuditEvent](https://hl7.org/FHIR/auditevent.html) resources.
 
 ## Installing
 

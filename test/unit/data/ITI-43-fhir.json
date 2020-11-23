@@ -6,7 +6,8 @@
   },
   "type": {
     "system": "http://dicom.nema.org/resources/ontology/DCM",
-    "code": "110107"
+    "code": "110107",
+    "display": "Import"
   },
   "subtype": [
     {
@@ -106,6 +107,15 @@
       "what": {
         "identifier": {
           "value": "1.2.3"
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "9",
+              "system": "http://terminology.hl7.org/CodeSystem/security-source-type"
+            }
+          ],
+          "text": "Report Number"
         }
       },
       "type": {
