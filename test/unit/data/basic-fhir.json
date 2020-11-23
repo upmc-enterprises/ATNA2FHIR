@@ -6,6 +6,7 @@
   },
   "type": {
     "system": "http://dicom.nema.org/resources/ontology/DCM",
+    "display": "Application Activity",
     "code": "110100"
   },
   "subtype": [
@@ -67,6 +68,15 @@
       "what": {
         "identifier": {
           "value": "1.2.3"
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "110180",
+              "system": "http://terminology.hl7.org/CodeSystem/security-source-type"
+            }
+          ],
+          "text": "Study Instance UID"
         }
       },
       "type": {

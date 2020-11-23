@@ -5,7 +5,8 @@
     "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Audit Event</div>"
   },
   "type": {
-    "code": "rest"
+    "code": "rest",
+    "display": "Restful Operation"
   },
   "subtype": [
     {

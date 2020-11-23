@@ -6,7 +6,8 @@
   },
   "type": {
     "system": "http://dicom.nema.org/resources/ontology/DCM",
-    "code": "110107"
+    "code": "110107",
+    "display": "Import"
   },
   "subtype": [
     {
@@ -82,6 +83,15 @@
       "what": {
         "identifier": {
           "value": "1.2.3"
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "8",
+              "system": "RFC-3881"
+            }
+          ],
+          "text": "Report Name"
         }
       },
       "type": {

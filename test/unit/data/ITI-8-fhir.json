@@ -6,7 +6,8 @@
   },
   "type": {
     "system": "http://dicom.nema.org/resources/ontology/DCM",
-    "code": "110110"
+    "code": "110110",
+    "display": "Patient Record"
   },
   "subtype": [
     {
@@ -85,6 +86,15 @@
       "what": {
         "identifier": {
           "value": "123"
+        },
+        "type": {
+          "coding": [
+            {
+              "code": "2",
+              "system": "RFC-3881"
+            }
+          ],
+          "text": "Patient Number"
         }
       },
       "type": {
