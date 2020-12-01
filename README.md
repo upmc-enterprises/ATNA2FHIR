@@ -38,13 +38,8 @@ const xml = `<AuditMessage>
     </ParticipantObjectIdentification>    
 </AuditMessage>`
 
-// Usage with async/await
-const result = await converter.convert(xml)
-console.log(JSON.stringify(result))
-
-// Usage with callbacks
-converter.convert(xml).then((response) => {  
-  console.log(JSON.stringify(response))
-})
+const auditEvent = await converter.convert(xml)
+const transaction = converter.wrapInABundleTransaction(auditEvent)
+console.log(JSON.stringify(transaction))
 
 ````
