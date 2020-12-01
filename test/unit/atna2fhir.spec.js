@@ -1,9 +1,8 @@
 const fs = require('fs')
-const uuid = require('uuid')
 let converter
 
 describe('Converts ATNA AuditMessages to FHIR AuditEvents', () => {
-  const dateRightNowIsoString = 'mock iso string representation of date right now'
+  const dateRightNowIsoString = '2020-01-01T12:00:00.500-08:00'
   const mockUUID = '1234-1234-1234-1234'
 
   beforeEach(() => {
