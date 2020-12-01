@@ -15,7 +15,9 @@ describe('Converts ATNA AuditMessages to FHIR AuditEvents', () => {
         }
       })
 
-    jest.spyOn(uuid, 'v4').mockReturnValue(mockUUID)
+    jest.mock('uuid', () => ({
+      v4: () => mockUUID
+    }))
 
     converter = require('../../lib')
   })
