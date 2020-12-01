@@ -82,4 +82,13 @@ describe('Converts ATNA AuditMessages to FHIR AuditEvents', () => {
       expect(auditEvent).toEqual(fhir)
     })
   })
+
+  it('wraps in a FHIR Bundle', async () => {
+    const fhir = JSON.parse(fs.readFileSync('test/unit/data/basic-fhir-bundle.json'))
+    const atna = fs.readFileSync('test/unit/data/basic-atna.xml')
+    const audit = await converter.convert(atna)
+    audit.recorded = dateRightNowIsoString
+    const wrapped = converter.wrapInABundle(audit)
+    expect(wrapped).toEqual(fhir)
+  })
 })
