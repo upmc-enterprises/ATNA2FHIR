@@ -3,7 +3,7 @@
   "type": "transaction",
   "entry": [
     {
-      "fullUrl": "urn:uuid:",
+      "fullUrl": "urn:uuid:1234-1234-1234-1234",
       "resource": {
         "resourceType": "AuditEvent",
         "text": {
@@ -24,7 +24,7 @@
         ],
         "action": "E",
         "period": "2014-11-10T12:00:00.500-08:00",
-        "recorded": "2020-11-13T18:35:11.372Z",
+        "recorded": "mock iso string representation of date right now",
         "outcome": "0",
         "outcomeDesc": "description",
         "agent": [

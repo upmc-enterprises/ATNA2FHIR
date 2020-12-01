@@ -1,8 +1,10 @@
 const fs = require('fs')
-const converter = require('../../lib')
+const uuid = require('uuid')
+let converter
 
 describe('Converts ATNA AuditMessages to FHIR AuditEvents', () => {
   const dateRightNowIsoString = 'mock iso string representation of date right now'
+  const mockUUID = '1234-1234-1234-1234'
 
   beforeEach(() => {
     jest
@@ -12,6 +14,10 @@ describe('Converts ATNA AuditMessages to FHIR AuditEvents', () => {
           toISOString: () => dateRightNowIsoString
         }
       })
+
+    jest.spyOn(uuid, 'v4').mockReturnValue(mockUUID)
+
+    converter = require('../../lib')
   })
 
   describe('A "basic" ATNA AuditMessage', () => {
@@ -83,12 +89,14 @@ describe('Converts ATNA AuditMessages to FHIR AuditEvents', () => {
     })
   })
 
-  it('wraps in a FHIR Bundle', async () => {
-    const fhir = JSON.parse(fs.readFileSync('test/unit/data/basic-fhir-bundle.json'))
-    const atna = fs.readFileSync('test/unit/data/basic-atna.xml')
-    const audit = await converter.convert(atna)
-    audit.recorded = dateRightNowIsoString
-    const wrapped = converter.wrapInABundle(audit)
-    expect(wrapped).toEqual(fhir)
+  describe('.wrapInABundle', () => {
+    it('wraps in a FHIR Bundle', async () => {
+      const fhir = JSON.parse(fs.readFileSync('test/unit/data/basic-fhir-bundle.json'))
+      const atna = fs.readFileSync('test/unit/data/basic-atna.xml')
+      const converted = await converter.convert(atna)
+      converted.recorded = dateRightNowIsoString
+      const wrapped = converter.wrapInABundle(converted)
+      expect(wrapped).toEqual(fhir)
+    })
   })
 })
