@@ -12,7 +12,7 @@ $ npm install @upmc-enterprises/atna2fhir
 ## Versioning
 ATNA2FHIR Version |     FHIR Version      |
 ------------------|-----------------------|
-**1.0.x**         | R4                    |  
+**1.x.x**         | R4                    |  
 
 ## Usage
 ````javascript
