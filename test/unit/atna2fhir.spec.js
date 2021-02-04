@@ -90,6 +90,18 @@ describe('Converts ATNA AuditMessages to FHIR AuditEvents', () => {
     })
   })
 
+  describe('an empty ATNA message', () => {
+    const fhir = JSON.parse(fs.readFileSync('test/unit/data/empty-fhir.json'))
+    const atna = fs.readFileSync('test/unit/data/empty-atna.xml')
+
+    it('maps the empty ATNA into an empty FHIR audit event', async () => {
+      const auditEvent = await converter.convert(atna)
+      // set the expected recordedDate time here, as it varies each run
+      fhir.recorded = dateRightNowIsoString
+      expect(auditEvent).toEqual(fhir)
+    })
+  })
+
   describe('.wrapInABundleTransaction', () => {
     it('wraps in a FHIR Bundle', async () => {
       const fhir = JSON.parse(fs.readFileSync('test/unit/data/basic-fhir-bundle.json'))

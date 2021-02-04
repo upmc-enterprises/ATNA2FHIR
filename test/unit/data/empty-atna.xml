@@ -1,0 +1,19 @@
+<AuditMessage>
+    <EventIdentification>
+        <EventID />
+        <EventTypeCode />
+    </EventIdentification>
+    <ActiveParticipant>
+        <RoleIDCode />
+    </ActiveParticipant>
+    <ActiveParticipant>
+        <RoleIDCode />
+    </ActiveParticipant>
+    <AuditSourceIdentification>
+        <AuditSourceTypeCode />
+    </AuditSourceIdentification>
+    <ParticipantObjectIdentification>
+        <ParticipantObjectIDTypeCode />
+        <ParticipantObjectDetail />
+    </ParticipantObjectIdentification>
+</AuditMessage>
