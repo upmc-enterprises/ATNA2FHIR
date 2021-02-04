@@ -1,0 +1,11 @@
+{
+  "entity": [
+    {}
+  ],
+  "recorded": "2020-01-01T12:00:00.500-08:00",
+  "resourceType": "AuditEvent",
+  "text": {
+    "div": "<div xmlns='http://www.w3.org/1999/xhtml'>Audit Event</div>",
+    "status": "generated"
+  }
+}
