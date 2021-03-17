@@ -16,21 +16,33 @@
     }
   ],
   "action": "R",
-  "period": "2020-03-19T12:16:37.320Z",
+  "period": {
+    "end": "2020-03-19T12:16:37.320Z"
+  },
   "recorded": "2020-11-13T18:20:57.507Z",
   "outcome": "0",
   "agent": [
     {
       "type": {
-        "code": "humanuser",
-        "system": "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
-        "display": "human user"
+        "coding": [
+          {
+            "code": "humanuser",
+            "system": "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+            "display": "human user"
+          }
+        ]
       },
-      "role": {
-        "code": "humanuser",
-        "system": "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
-        "display": "human user"
-      },
+      "role": [
+        {
+          "coding": [
+            {
+              "code": "humanuser",
+              "system": "http://terminology.hl7.org/CodeSystem/extra-security-role-type",
+              "display": "human user"
+            }
+          ]
+        }
+      ],
       "who": {
         "identifier": {
           "value": "username1"
@@ -45,15 +57,25 @@
     },
     {
       "type": {
-        "code": "110150",
-        "system": "http://dicom.nema.org/resources/ontology/DCM",
-        "display": "Application"
+        "coding": [
+          {
+            "code": "110150",
+            "system": "http://dicom.nema.org/resources/ontology/DCM",
+            "display": "Application"
+          }
+        ]
       },
-      "role": {
-        "code": "110150",
-        "system": "http://dicom.nema.org/resources/ontology/DCM",
-        "display": "Application"
-      },
+      "role": [
+        {
+          "coding": [
+            {
+              "code": "110150",
+              "system": "http://dicom.nema.org/resources/ontology/DCM",
+              "display": "Application"
+            }
+          ]
+        }
+      ],
       "who": {
         "identifier": {
           "value": "serviceaccount1"
@@ -73,11 +95,13 @@
         "value": "exampleapp.com"
       }
     },
-    "type": {
-      "code": "3",
-      "system": "http://terminology.hl7.org/CodeSystem/security-source-type",
-      "display": "Web Server"
-    }
+    "type": [
+      {
+        "code": "3",
+        "system": "http://terminology.hl7.org/CodeSystem/security-source-type",
+        "display": "Web Server"
+      }
+    ]
   },
   "entity": [
     {

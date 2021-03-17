@@ -17,21 +17,33 @@
     }
   ],
   "action": "C",
-  "period": "2020-10-13T15:40:50.914Z",
+  "period": {
+    "end": "2020-10-13T15:40:50.914Z"
+  },
   "recorded": "2020-11-13T18:38:38.552Z",
   "outcome": "0",
   "agent": [
     {
       "type": {
-        "code": "110153",
-        "system": "http://dicom.nema.org/resources/ontology/DCM",
-        "display": "Source"
+        "coding": [
+          {
+            "code": "110153",
+            "system": "http://dicom.nema.org/resources/ontology/DCM",
+            "display": "Source"
+          }
+        ]
       },
-      "role": {
-        "code": "110153",
-        "system": "http://dicom.nema.org/resources/ontology/DCM",
-        "display": "Source"
-      },
+      "role": [
+        {
+          "coding": [
+            {
+              "code": "110153",
+              "system": "http://dicom.nema.org/resources/ontology/DCM",
+              "display": "Source"
+            }
+          ]
+        }
+      ],
       "who": {
         "identifier": {
           "value": "/RetrieveValueSet"
@@ -45,15 +57,25 @@
     },
     {
       "type": {
-        "code": "110152",
-        "system": "http://dicom.nema.org/resources/ontology/DCM",
-        "display": "Destination"
+        "coding": [
+          {
+            "code": "110152",
+            "system": "http://dicom.nema.org/resources/ontology/DCM",
+            "display": "Destination"
+          }
+        ]
       },
-      "role": {
-        "code": "110152",
-        "system": "http://dicom.nema.org/resources/ontology/DCM",
-        "display": "Destination"
-      },
+      "role": [
+        {
+          "coding": [
+            {
+              "code": "110152",
+              "system": "http://dicom.nema.org/resources/ontology/DCM",
+              "display": "Destination"
+            }
+          ]
+        }
+      ],
       "who": {
         "identifier": {
           "value": "123"
@@ -74,24 +96,26 @@
         "value": "1.2.3"
       }
     },
-    "type": {
-      "code": "4"
-    }
+    "type": [
+      {
+        "code": "4"
+      }
+    ]
   },
   "entity": [
     {
       "what": {
         "identifier": {
-          "value": "1.2.3"
-        },
-        "type": {
-          "coding": [
-            {
-              "code": "8",
-              "system": "RFC-3881"
-            }
-          ],
-          "text": "Report Name"
+          "value": "1.2.3",
+          "type": {
+            "coding": [
+              {
+                "code": "8",
+                "system": "RFC-3881"
+              }
+            ],
+            "text": "Report Name"
+          }
         }
       },
       "type": {

@@ -17,22 +17,44 @@
     }
   ],
   "action": "E",
-  "period": "2014-11-10T12:00:00.500-08:00",
+  "period": {
+    "end": "2014-11-10T12:00:00.500-08:00"
+  },
   "recorded": "2020-11-13T18:35:11.372Z",
   "outcome": "0",
   "outcomeDesc": "description",
   "agent": [
     {
       "type": {
-        "code": "110150",
-        "system": "http://dicom.nema.org/resources/ontology/DCM",
-        "display": "Application"
+        "coding": [
+          {
+            "code": "110150",
+            "system": "http://dicom.nema.org/resources/ontology/DCM",
+            "display": "Application"
+          },
+          {
+            "code": "110153",
+            "system": "http://dicom.nema.org/resources/ontology/DCM",
+            "display": "Source Role ID"
+          }
+        ]
       },
-      "role": {
-        "code": "110150",
-        "system": "http://dicom.nema.org/resources/ontology/DCM",
-        "display": "Application"
-      },
+      "role": [
+        {
+          "coding": [
+            {
+              "code": "110150",
+              "system": "http://dicom.nema.org/resources/ontology/DCM",
+              "display": "Application"
+            },
+            {
+              "code": "110153",
+              "system": "http://dicom.nema.org/resources/ontology/DCM",
+              "display": "Source Role ID"
+            }
+          ]
+        }
+      ],
       "who": {
         "identifier": {
           "value": "root"
@@ -57,26 +79,28 @@
         "value": "127.0.0.1@ACCT"
       }
     },
-    "type": {
-      "code": "9",
-      "system": "http://terminology.hl7.org/CodeSystem/security-source-type",
-      "display": "Other"
-    }
+    "type": [
+      {
+        "code": "9",
+        "system": "http://terminology.hl7.org/CodeSystem/security-source-type",
+        "display": "Other"
+      }
+    ]
   },
   "entity": [
     {
       "what": {
         "identifier": {
-          "value": "1.2.3"
-        },
-        "type": {
-          "coding": [
-            {
-              "code": "110180",
-              "system": "http://terminology.hl7.org/CodeSystem/security-source-type"
-            }
-          ],
-          "text": "Study Instance UID"
+          "value": "1.2.3",
+          "type": {
+            "coding": [
+              {
+                "code": "110180",
+                "system": "http://terminology.hl7.org/CodeSystem/security-source-type"
+              }
+            ],
+            "text": "Study Instance UID"
+          }
         }
       },
       "type": {
