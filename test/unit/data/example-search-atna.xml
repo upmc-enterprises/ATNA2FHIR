@@ -12,7 +12,7 @@
         <RoleIDCode csd-code="110150" codeSystemName="http://dicom.nema.org/resources/ontology/DCM" originalText="Application"/>
     </ActiveParticipant>
     <AuditSourceIdentification AuditEnterpriseSiteID="Cloud" AuditSourceID="exampleapp.com">
-        <AuditSourceTypeCode csd-code="3" codeSystemName="http://terminology.hl7.org/CodeSystem/security-source-type" originalText="Web Server"/>
+        <AuditSourceTypeCode csd-code="3" codeSystemName="DCM" originalText="Web Server"/>
     </AuditSourceIdentification>
     <ParticipantObjectIdentification ParticipantObjectID="v1/Patient" ParticipantObjectTypeCode="2" ParticipantObjectTypeCodeRole="24" ParticipantObjectDataLifeCycle="6">
         <ParticipantObjectQuery>P2xhc3RfbmFtZT1kb2U=</ParticipantObjectQuery>

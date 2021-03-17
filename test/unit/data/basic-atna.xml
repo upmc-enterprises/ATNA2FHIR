@@ -9,6 +9,7 @@
                        NetworkAccessPointID="127.0.0.1"
                        NetworkAccessPointTypeCode="2" UserID="root" UserIsRequestor="false">
         <RoleIDCode csd-code="110150" codeSystemName="DCM" originalText="Application"/>
+        <RoleIDCode csd-code="110153" codeSystemName="DCM" originalText="Source Role ID" />
         <MediaIdentifier>
             <MediaType csd-code="110030" codeSystemName="DCM" originalText="USB Disk Emulation"/>
         </MediaIdentifier>

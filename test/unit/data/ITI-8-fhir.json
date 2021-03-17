@@ -17,21 +17,33 @@
     }
   ],
   "action": "U",
-  "period": "2020-08-24T20:00:32.654Z",
+  "period": {
+    "end": "2020-08-24T20:00:32.654Z"
+  },
   "recorded": "2020-11-13T18:22:07.978Z",
   "outcome": "0",
   "agent": [
     {
       "type": {
-        "code": "110153",
-        "system": "http://dicom.nema.org/resources/ontology/DCM",
-        "display": "Source Role ID"
+        "coding": [
+          {
+            "code": "110153",
+            "system": "http://dicom.nema.org/resources/ontology/DCM",
+            "display": "Source Role ID"
+          }
+        ]
       },
-      "role": {
-        "code": "110153",
-        "system": "http://dicom.nema.org/resources/ontology/DCM",
-        "display": "Source Role ID"
-      },
+      "role": [
+        {
+          "coding": [
+            {
+              "code": "110153",
+              "system": "http://dicom.nema.org/resources/ontology/DCM",
+              "display": "Source Role ID"
+            }
+          ]
+        }
+      ],
       "who": {
         "identifier": {
           "value": "root|xyz"
@@ -46,15 +58,25 @@
     },
     {
       "type": {
-        "code": "110152",
-        "system": "http://dicom.nema.org/resources/ontology/DCM",
-        "display": "Destination Role ID"
+        "coding": [
+          {
+            "code": "110152",
+            "system": "http://dicom.nema.org/resources/ontology/DCM",
+            "display": "Destination Role ID"
+          }
+        ]
       },
-      "role": {
-        "code": "110152",
-        "system": "http://dicom.nema.org/resources/ontology/DCM",
-        "display": "Destination Role ID"
-      },
+      "role": [
+        {
+          "coding": [
+            {
+              "code": "110152",
+              "system": "http://dicom.nema.org/resources/ontology/DCM",
+              "display": "Destination Role ID"
+            }
+          ]
+        }
+      ],
       "who": {
         "identifier": {
           "value": "root|abc"
@@ -75,26 +97,28 @@
         "value": "123@example.com"
       }
     },
-    "type": {
-      "code": "9",
-      "system": "http://terminology.hl7.org/CodeSystem/security-source-type",
-      "display": "Other"
-    }
+    "type": [
+      {
+        "code": "9",
+        "system": "http://terminology.hl7.org/CodeSystem/security-source-type",
+        "display": "Other"
+      }
+    ]
   },
   "entity": [
     {
       "what": {
         "identifier": {
-          "value": "123"
-        },
-        "type": {
-          "coding": [
-            {
-              "code": "2",
-              "system": "RFC-3881"
-            }
-          ],
-          "text": "Patient Number"
+          "value": "123",
+          "type": {
+            "coding": [
+              {
+                "code": "2",
+                "system": "RFC-3881"
+              }
+            ],
+            "text": "Patient Number"
+          }
         }
       },
       "type": {
