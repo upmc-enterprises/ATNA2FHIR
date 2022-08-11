@@ -1,6 +1,6 @@
 {
   "name": "@upmc-enterprises/atna2fhir",
-  "version": "1.3.1",
+  "version": "1.3.2",
   "description": "ATNA (DICOM) AuditMessage to FHIR AuditEvent converter",
   "main": "./lib/index.js",
   "directories": {
